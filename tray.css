@@ -1,0 +1,112 @@
+.trayCont {
+  height: 125px;
+  margin: auto;
+  position: relative;
+}
+
+.viewCont {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  height: 100%;
+  position: relative;
+  left: 0;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+}
+
+.slide {
+  width: 200px;
+  height: calc(100% - 2px);
+  position: relative;
+  float: left;
+  background: #d90;
+  border-radius: 5px;
+  border: 1px solid #000;
+  text-align: center;
+  margin: auto 5px;
+}
+
+.btnCont {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.prevBtn,
+.nextBtn {
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #d90;
+  padding: 3px 5px;
+  position: relative;
+  color: #d90;
+  border: 1px solid #000;
+  display: none;
+}
+
+.viewCont:hover .prevBtn,
+.viewCont:hover .nextBtn {
+  display: block;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  color: #d50;
+}
+
+.nextBtn {
+  float: right;
+}
+
+.prevBtn {
+  float: left;
+}
+
+.dotCont {
+  display: inline-block;
+  height: 10px;
+  position: relative;
+  padding: 0;
+  margin: 10px auto;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.dot {
+  cursor: pointer;
+  float: left;
+  position: relative;
+  width: 10px;
+  margin-left: 2.5px;
+  height: 10px;
+  list-style: none;
+  border-radius: 50%;
+  background-color: #db0;
+}
+
+.selectedDot {
+  cursor: not-allowed!important;
+  background-color: orange!important;
+}
+
+.dot:hover:not(.selectedDot) {
+  background-color: #d50;
+}
